@@ -13,3 +13,12 @@ As one can see, a matrix product of two images interpreted as an image does
 have an interesting structure, and this structure is particularly rich,
 if one normalizes rows of the left matrix and columns of the right matrix
 (e.g. by `softmax`).
+
+The `scale-invariance.ipynb` tests that the effects are invariant with
+respect to image rescaling. Because of the bug described in
+
+https://github.com/anhinga/github-tests
+
+use the following link to view this notebook:
+
+https://nbviewer.jupyter.org/github/anhinga/julia-notebooks/blob/main/images-as-matrices/scale-invariance.ipynb
