@@ -17,16 +17,16 @@ eventually stop being a purely research subject and will become a technology.
 I maintain a Web site for this formalism here: https://anhinga.github.io/
 
 I also maintain a list of open problems and promising research and technological directions and interdisciplinary
-connections relared to this formalism: https://www.cs.brandeis.edu/~bukatin/dmm-collaborative-research-agenda.pdf
+connections related to this formalism: https://www.cs.brandeis.edu/~bukatin/dmm-collaborative-research-agenda.pdf
 
 ### brief timeline
 
 My background in software, mathematics, and science goes back to Soviet Union, to machine code, Algol-60, Fortran-4,
-and to punched cards; to Puschino, the Biological Center of the Soviet Academy of Sciences, and to
+and to punched cards; to Pushchino, the Biological Center of the Soviet Academy of Sciences, and to
 the Mathematical class of Moscow High School number 7.
 
 I started to focus on continuous models of computations in college, then emigrated to USA, worked as
-a scientfic programmer for Alex Rashin at Biosym Technologies doing computational geometry and computational chemistry
+a scientific programmer for Alex Rashin at Biosym Technologies doing computational geometry and computational chemistry
 (I was the second author on several papers in _The Journal of Physical Chemistry_ and _Biophysical Chemistry_
 from that period), then did a PhD in Computer Science at Brandeis University focusing of mathematics
 of continuous domains for denotational semantics (this is a copy of my 2002 PhD thesis: https://arxiv.org/abs/1512.03868).
@@ -35,7 +35,7 @@ In parallel, I worked in various places in the software industry. There I had a 
 dataflow programming, Lisp, and actor model of programming. 
 
 This century I have been working at a geographic software company (ownership of it went through acquisitions, spin-offs,
-and such, so one very long employment looks like a several shorter ones from a formal viewpoint), 
+and such, so one very long employment looks like several shorter ones from a formal viewpoint), 
 while doing research in parallel. My research focus was mostly on theoretical neuroscience for a while,
 then a research collaboration on deep connections between _partial metrics_ and _fuzzy equalities_, 
 and finally (from approximately Fall of 2012) a research collaboration
@@ -53,7 +53,7 @@ and finally working a bit with shader-based GLSL animations.
 _Linear streams_ are streams for which linear combinations of several streams are defined. If one makes sure that
 linear computations and general (often non-linear) computations are interleaved, then one gets continuously deformable programs which
 we call **Dataflow matrix machines (DMMs)**. Another way to obtain DMMs is to start with recurrent neural networks
-and replace streams of numbers with linear streams and allow complicate "activation functions"
+and replace streams of numbers with linear streams and allow complicated "activation functions"
 (that is, transformations of linear streams) with arbitrary arity.
 
 This setup also allows these neural machines to have very natural and flexible self-modification facilities.
