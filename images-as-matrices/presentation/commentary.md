@@ -79,8 +79,15 @@ Look at formula 1 for Scaled Dot-Product Attention. The softmax is applied to ea
 
 In our case, we found that for visually interesting results, one also needs to apply softmax to the columns of the right-hand-side matrix.
 
-(It would certainly be interesting to try modify Transformers in this fashion, but one needs to be able to train some Transformers at the first place.
+(It would certainly be interesting to try modify Transformers in this fashion, but one needs to be able to train some Transformers in the first place.
 Then one could investigate, whether this change would be an improvement.)
 
 #### 2) Our own studies
 
+Our collaborations studied an interesting class of neural machines called "dataflow matrix machines" in recent years, and I was looking at the interplay between
+those machines and attention-based models (including Transformers) in recent months (see Section 11 of https://www.cs.brandeis.edu/~bukatin/dmm-collaborative-research-agenda.pdf and also https://github.com/anhinga/2020-notes/tree/master/attention-based-models).
+
+In particular, just like essence of "neural model of computations" is that linear and generally-speaking non-linear transformations are interleaved,
+it makes sense to consider the schemes of computation where matrix multiplications and generation of pairs of matrices are interleaved: https://github.com/anhinga/2020-notes/blob/master/attention-based-models/matrix-mult-machines.md
+
+This study of matrix multiplication of images was done in the context of my thinking about these kinds of computational setups.
