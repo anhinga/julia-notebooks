@@ -41,4 +41,5 @@ interesting novel ways to obtain visual art by mathematical transformations.
 I also hope this might eventually be of help as people try to achieve better understanding
 and more fine-grained control of our machine learning models.
 
-The markdown file commenting the Julia notebook is posted at .
+The markdown file commenting the Julia notebook is posted at 
+https://github.com/anhinga/julia-notebooks/blob/main/images-as-matrices/presentation/commentary.md
