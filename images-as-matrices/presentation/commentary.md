@@ -1,6 +1,6 @@
 ## Commentary to "Multplying monochrome images as matrices"
 
-We obtained images like
+I obtained images like
 
 ![symmetric](symmetric.png)
 
@@ -27,7 +27,7 @@ the warning in cell 1 is gone, which is good).
 
 The sketch of the talk proposal itself is at https://github.com/anhinga/julia-notebooks/blob/main/images-as-matrices/presentation/talk-proposal.md
 
-We discuss a bit of machine learning context at the bottom of this file
+I discuss a bit of machine learning context at the bottom of this file
 
 ---
 
@@ -82,5 +82,5 @@ In our case, we found that for visually interesting results, one also needs to a
 (It would certainly be interesting to try modify Transformers in this fashion, but one needs to be able to train some Transformers at the first place.
 Then one could investigate, whether this change would be an improvement.)
 
-#### 2) My own studies
+#### 2) Our own studies
 
