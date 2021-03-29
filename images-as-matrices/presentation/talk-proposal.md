@@ -24,14 +24,14 @@ Julia Jupyter notebooks.
 
 I looked at standard Julia test images, such as "mandrill" and "jetplane",
 and discovered that there is plenty of visually interesting information
-in the matrix products. I used the scaling of pixel values which is also used
-by ImageView.imshow methods.
+in their matrix products. I used the scaling of pixel values which is also used
+by ImageView.imshow() methods.
 
 It turned out that the matrix products were particularly informative and had a lot
 of visible fine structure, if one softmax-normalized rows of the left-hand-side matrix 
 and columns of the right-hand-side matrix before taking the product. The
-images looked slightly toned-down and striped after normalization, but not too different visually, however
-the products were drastically different. Note that in Transformer models one usually
+images looked slightly toned-down and striped after normalization, but not too different visually. 
+However the products were drastically different. Note that in Transformer models one usually
 applies softmax only on one side, but this turns out to be insufficient for our
 visual exploration of matrix products.
 
