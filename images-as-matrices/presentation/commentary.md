@@ -15,7 +15,7 @@ View the Julia Jupyter notebook in question via this link:
 https://nbviewer.jupyter.org/github/anhinga/github-tests/blob/main/Untitled.ipynb
 
 (The notebook itself is at https://github.com/anhinga/github-tests/blob/main/Untitled.ipynb
-there is a github bug preventing some Jupyter notebook from rendering correctly, so
+there is a GitHub bug preventing some Jupyter notebook from rendering correctly, so
 one has to use `nbviewer` or its equivalent.)
 
 This is the first notebook in this study, it was created on December 8, 2020 with Julia 1.5.2
@@ -23,6 +23,8 @@ on Windows 10. I verified that all this still works with Julia 1.6.0 (but much f
 the warning in cell 1 is gone, which is good).
 
 The sketch of the talk proposal itself is at https://github.com/anhinga/julia-notebooks/blob/main/images-as-matrices/presentation/talk-proposal.md
+
+We discuss a bit of machine learning context at the bottom of this file
 
 Cell 3: read "mandrill" standard test image
 
@@ -54,8 +56,23 @@ Cell 79: softmax rows in "jetplane" (you see horizontal stripes on the resulting
 
 Cell 80: softmax columns in "mandrill" (you see vertical stripes on the resulting image)
 
-Cell 81: transpose that ""mandrill" (the transposed image has softmaxed rows, you see horizontal stripes)
+Cell 81: transpose that "mandrill" (the transposed image has softmaxed rows, you see horizontal stripes)
 
 Cell 82: multiply the result of Cell 81 by the result of Cell 80, and show the normalized result (now we see plenty of interesting fine structure, and the result is quite artistic)
 
 Cell 83: multiply the result of Cell 79 by the result of Cell 80, and show the normalized result (now we see plenty of interesting fine structure, and the result is quite artistic)
+
+---
+
+Machine learning context.
+
+1) Looking at page 4 of the famous "Attention Is All You Need" paper introducing the Transformer architecture: https://arxiv.org/abs/1706.03762
+
+Look at formula 1 for Scaled Dot-Product Attention. The softmax is applied to each row of the left-hand-side matrix before taking the final matrix product.
+
+In our case, we found that for visually interesting results, one also needs to apply softmax to the columns of the right-hand-side matrix.
+
+(It would certainly be interesting to try modify Transformers in this fashion, but one needs to be able to train some Transformers at the first place.
+Then one could investigate, whether this change would be an improvement.)
+
+2) 
