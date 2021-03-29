@@ -73,13 +73,13 @@ Cell 83: multiply the result of Cell 79 by the result of Cell 80, and show the n
 
 #### 1) Transformers
 
-Looking at page 4 of the famous "Attention Is All You Need" paper introducing the Transformer architecture: https://arxiv.org/abs/1706.03762
+Let's look at page 4 of the famous "Attention Is All You Need" paper introducing the Transformer architecture: https://arxiv.org/abs/1706.03762
 
-Look at formula 1 for Scaled Dot-Product Attention. The softmax is applied to each row of the left-hand-side matrix before taking the final matrix product.
+Let's look at formula 1 for Scaled Dot-Product Attention. The softmax is applied to each row of the left-hand-side matrix before taking the final matrix product.
 
-In our case, we found that for visually interesting results, one also needs to apply softmax to the columns of the right-hand-side matrix.
+In our case, I found that for visually interesting results, one also needs to apply softmax to the columns of the right-hand-side matrix.
 
-(It would certainly be interesting to try modify Transformers in this fashion, but one needs to be able to train some Transformers in the first place.
+(It would certainly be interesting to try modifying formula 1 for Transformers in this fashion, but one needs to be able to train some Transformers in the first place.
 Then one could investigate, whether this change would be an improvement.)
 
 #### 2) Our own studies
