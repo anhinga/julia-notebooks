@@ -43,3 +43,19 @@ Cell 45: read standard "jetplane" test image
 Cell 51: remove alpha channel, and make it `Array{Gray{Float32},2}`, as in cell 5 above
 
 Cell 53: multiply "jetplane" by "mandrill", and show the normalized result (plenty of information in that product, but not an "excessively artistic" image)
+
+Cell 76: a relatively naive version of `softmax` (softmax matrix columns with the default call)
+
+Cell 77: one of the possible ways to softmax matrix rows 
+
+`softmax` does lose `Gray` image type, so it needs to be added back for the purpose of rendering, as one sees in the following cells.
+
+Cell 79: softmax rows in "jetplane" (you see horizontal stripes on the resulting image)
+
+Cell 80: softmax columns in "mandrill" (you see vertical stripes on the resulting image)
+
+Cell 81: transpose that ""mandrill" (the transposed image has softmaxed rows, you see horizontal stripes)
+
+Cell 82: multiply the result of Cell 81 by the result of Cell 80, and show the normalized result (now we see plenty of interesting fine structure, and the result is quite artistic)
+
+Cell 83: multiply the result of Cell 79 by the result of Cell 80, and show the normalized result (now we see plenty of interesting fine structure, and the result is quite artistic)
