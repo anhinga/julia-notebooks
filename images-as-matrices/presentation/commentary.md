@@ -1,4 +1,4 @@
-## Commentrary to "Multplying monochrome images as matrices"
+## Commentary to "Multplying monochrome images as matrices"
 
 We obtained images like
 
@@ -15,7 +15,8 @@ View the Julia Jupyter notebook in question via this link:
 https://nbviewer.jupyter.org/github/anhinga/github-tests/blob/main/Untitled.ipynb
 
 (The notebook itself is at https://github.com/anhinga/github-tests/blob/main/Untitled.ipynb
-there is a GitHub bug preventing some Jupyter notebook from rendering correctly, so
+
+However, there is a GitHub bug preventing some Jupyter notebooks including this one from rendering correctly, so
 one has to use `nbviewer` or its equivalent.)
 
 This is the first notebook in this study, it was created on December 8, 2020 with Julia 1.5.2
