@@ -1,4 +1,4 @@
-## Multplying monochrome images as matrices: A*B and softmax
+## Multiplying monochrome images as matrices: A*B and softmax
 
 ---
 
