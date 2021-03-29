@@ -10,6 +10,8 @@ and
 
 via matrix multiplication.
 
+---
+
 View the Julia Jupyter notebook in question via this link:
 
 https://nbviewer.jupyter.org/github/anhinga/github-tests/blob/main/Untitled.ipynb
@@ -26,6 +28,8 @@ the warning in cell 1 is gone, which is good).
 The sketch of the talk proposal itself is at https://github.com/anhinga/julia-notebooks/blob/main/images-as-matrices/presentation/talk-proposal.md
 
 We discuss a bit of machine learning context at the bottom of this file
+
+---
 
 Cell 3: read "mandrill" standard test image
 
@@ -65,9 +69,11 @@ Cell 83: multiply the result of Cell 79 by the result of Cell 80, and show the n
 
 ---
 
-Machine learning context.
+### Machine learning context.
 
-1) Looking at page 4 of the famous "Attention Is All You Need" paper introducing the Transformer architecture: https://arxiv.org/abs/1706.03762
+#### 1) Transformers
+
+Looking at page 4 of the famous "Attention Is All You Need" paper introducing the Transformer architecture: https://arxiv.org/abs/1706.03762
 
 Look at formula 1 for Scaled Dot-Product Attention. The softmax is applied to each row of the left-hand-side matrix before taking the final matrix product.
 
@@ -76,4 +82,5 @@ In our case, we found that for visually interesting results, one also needs to a
 (It would certainly be interesting to try modify Transformers in this fashion, but one needs to be able to train some Transformers at the first place.
 Then one could investigate, whether this change would be an improvement.)
 
-2) 
+#### 2) My own studies
+
