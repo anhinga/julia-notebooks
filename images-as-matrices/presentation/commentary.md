@@ -1,4 +1,4 @@
-## Commentary to "Multplying monochrome images as matrices"
+## Commentary to "Multiplying monochrome images as matrices"
 
 I obtained images like
 
