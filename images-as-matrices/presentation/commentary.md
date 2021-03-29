@@ -79,7 +79,8 @@ Let's look at formula 1 for Scaled Dot-Product Attention. The softmax is applied
 
 In our case, I found that for visually interesting results, one also needs to apply softmax to the columns of the right-hand-side matrix.
 
-(It would certainly be interesting to try modifying formula 1 for Transformers in this fashion, but one needs to be able to train some Transformers in the first place.
+(It would certainly be interesting to try modifying formula 1 for Transformers in this fashion by applying softmax to the columns of the right-hand-side matrix, 
+but one needs to be able to train some Transformers in the first place.
 Then one could investigate, whether this change would be an improvement.)
 
 #### 2) Our own studies
