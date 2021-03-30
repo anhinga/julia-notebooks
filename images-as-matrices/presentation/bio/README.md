@@ -32,7 +32,7 @@ from that period), then did a PhD in Computer Science at Brandeis University foc
 of continuous domains for denotational semantics (this is a copy of my 2002 PhD thesis: https://arxiv.org/abs/1512.03868).
 
 In parallel, I worked in various places in the software industry. There I had a chance to first touch
-dataflow programming, Lisp, and actor model of programming. 
+dataflow programming, Common Lisp, and actor model of programming. 
 
 This century I have been working at a geographic software company (ownership of it went through acquisitions, spin-offs,
 and such, so one very long employment looks like several shorter ones from a formal viewpoint), 
@@ -57,7 +57,7 @@ and replace streams of numbers with linear streams and allow complicated "activa
 (that is, transformations of linear streams) with arbitrary arity.
 
 This setup also allows these neural machines to have very natural and flexible self-modification facilities.
-There are toy implementations in Processing with mutable matrices, and reference implementation in Clojure with
+There are toy implementations in Processing with mutable matrices, and the reference implementation in Clojure with
 immutable streams of tree-shaped "flexible-rank tensors". The reference paper on DMMs is https://arxiv.org/abs/1712.07447
 
 I hope to create the next application of this formalism in Julia 
