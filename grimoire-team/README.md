@@ -1,8 +1,9 @@
 some joint work done with a friend, who indicated that it's OK to make related code public
 
-some of the images transformations were inspired by
+see [design and history notes](https://github.com/anhinga/julia-notebooks/blob/main/grimoire-team/design-notes.md)
+for more details
 
-https://github.com/anhinga/fluid/blob/master/may_9_15_experiment/custom_wave_transform.pde
+---
 
 the first notebook in this series (the first I am committing, not the first that was done):
 
