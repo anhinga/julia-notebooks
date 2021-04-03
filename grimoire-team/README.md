@@ -16,3 +16,9 @@ https://nbviewer.jupyter.org/github/anhinga/julia-notebooks/blob/main/grimoire-t
 this was actually historically the first series of images:
 
 https://nbviewer.jupyter.org/github/anhinga/julia-notebooks/blob/main/grimoire-team/exercise-2.ipynb
+
+---
+
+and this is another set of images historically important for me:
+
+https://nbviewer.jupyter.org/github/anhinga/julia-notebooks/blob/main/grimoire-team/exercise-3.ipynb
