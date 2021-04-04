@@ -11,6 +11,8 @@ a different context (Jupyter notebooks and such).
 
 Then I've done further work on this in the first half of 2020.
 
+Some images from the `exercise-2` notebook were used at the Boston demoparty in June 2020: https://demozoo.org/graphics/279210/
+
 I would like to both preserve and make publicly available some of the resulting **visual art**,
 preserve the key code fragments and ideas, and refactor some of this code for future use.
 
