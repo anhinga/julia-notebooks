@@ -13,3 +13,12 @@ Then I've done further work on this in the first half of 2020.
 
 I would like to both preserve and make publicly available some of the resulting **visual art**,
 preserve the key code fragments and ideas, and refactor some of this code for future use.
+
+---
+
+Refactoring should include two things:
+
+1) the `warp` "inverse map", `(x,y)|->(xnew,ynew)`, should be on the level of coords. The access to `img(xnew,ynew)` should be outside the function.
+2) all parameters of "warp" functions should be explicit, global variables should be eliminated.
+
+It would be better if signatures of various `warp` functions are the same. But they are not always the same - how should we handle that?
