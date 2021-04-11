@@ -1,4 +1,4 @@
-some joint work done with a friend, who indicated that it's OK to make related code public
+some joint work done with a friend, who indicated that it's OK to make related code public (the images in the first 3 "exercise" notebooks are all due to him, I've just reproduced their generation in a different context (Jupyter notebooks and such)).
 
 see [design and history notes](https://github.com/anhinga/julia-notebooks/blob/main/grimoire-team/design-notes.md)
 for more details
