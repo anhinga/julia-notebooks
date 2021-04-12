@@ -27,3 +27,7 @@ A bit more scale-invariance tests in `scale-2.ipynb` (in particular, making sure
 `softmax` and rescaling commute). Use the following link to view this notebook:
 
 https://nbviewer.jupyter.org/github/anhinga/julia-notebooks/blob/main/images-as-matrices/scale-2.ipynb
+
+if it does not work, then:
+
+https://nbviewer.jupyter.org/github/anhinga/julia-notebooks/blob/main/images-as-matrices/scale-2.ipynb?flush_cache=true
