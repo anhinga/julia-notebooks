@@ -22,3 +22,8 @@ https://github.com/anhinga/github-tests
 use the following link to view this notebook:
 
 https://nbviewer.jupyter.org/github/anhinga/julia-notebooks/blob/main/images-as-matrices/scale-invariance.ipynb
+
+A bit more scale-invariance tests in `scale-2.ipynb` (in particular, making sure that
+`softmax` and rescaling commute). Use the following link to view this notebook:
+
+https://nbviewer.jupyter.org/github/anhinga/julia-notebooks/blob/main/images-as-matrices/scale-2.ipynb
