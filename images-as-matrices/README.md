@@ -14,6 +14,8 @@ have an interesting structure, and this structure is particularly rich,
 if one normalizes rows of the left matrix and columns of the right matrix
 (e.g. by `softmax`).
 
+---
+
 The `scale-invariance.ipynb` tests that the effects are invariant with
 respect to image rescaling. Because of the bug described in
 
@@ -31,3 +33,9 @@ https://nbviewer.jupyter.org/github/anhinga/julia-notebooks/blob/main/images-as-
 if it does not work, then:
 
 https://nbviewer.jupyter.org/github/anhinga/julia-notebooks/blob/main/images-as-matrices/scale-2.ipynb?flush_cache=true
+
+---
+
+See also the new experiments at
+
+https://github.com/anhinga/julia-notebooks/tree/main/grimoire-team/variations
