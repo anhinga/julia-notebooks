@@ -12,8 +12,10 @@ Note that the effect is much more pronounced with softmax normalization.
 
 ---
 
-A longer exploration:
+A longer exploration, composing this fixed set of operators more and exploring the expressive power of that a bit:
 
 https://nbviewer.jupyter.org/github/anhinga/julia-notebooks/blob/main/grimoire-team/variations/variation-4.ipynb
 
-Comments will be added later.
+There is some code duplication, because I have not done refactoring which I suggested in
+
+https://github.com/anhinga/julia-notebooks/blob/main/grimoire-team/design-notes.md
