@@ -19,3 +19,5 @@ https://nbviewer.jupyter.org/github/anhinga/julia-notebooks/blob/main/grimoire-t
 There is some code duplication, because I have not done refactoring which I suggested in
 
 https://github.com/anhinga/julia-notebooks/blob/main/grimoire-team/design-notes.md
+
+The beginning starts with the content of the `variation-3` notebook, as I decided it is the easiest to include it here.
