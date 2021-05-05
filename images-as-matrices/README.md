@@ -55,3 +55,16 @@ the range of values should start with 1 and not with 0, and the shape of the cur
 
 So, if one worries about the cost of computing a lot of `exp` functions here,
 this cost can be avoided.
+
+---
+
+A resolution study. We rescale the image, and obtain a 512x512 matrix by multiplying 512xN and Nx512 matrices:
+
+https://nbviewer.jupyter.org/github/anhinga/julia-notebooks/blob/main/images-as-matrices/resolution.ipynb
+
+Interestingly enough, there is not much difference between N=512 and N=256 (which probably tells us something
+about the true resolution of the original image (with a jetplane in `scale-2` notebook above we did not see
+much difference even between N=512 and N=128, so `jetplane` is probably of an even lower true resolution).
+
+Anyway, here we explore N=256,128,64,32,16,8,4,2, and even 1.
+
