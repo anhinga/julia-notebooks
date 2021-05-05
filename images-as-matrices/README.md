@@ -47,6 +47,11 @@ Exploring whether `softmax` normalization can be replaced with a simpler one:
 https://nbviewer.jupyter.org/github/anhinga/julia-notebooks/blob/main/images-as-matrices/softmax-and-more.ipynb
 
 We see that when in `f.(x) ./ sum(f.(x))` we use `identity` instead of `exp` as `f`, the quality deteriorates
-(too dark, less contrast). However, if we use `x -> x+1` instead of `exp`, the result is no worse
-(perhaps, even slightly better, but it's in the eye of a beholder). So what's important is that
-the range of values should start with 1 and not with 0, and not the shape of the curve.
+(too dark, less contrast). 
+
+However, if we use `x -> x+1` instead of `exp`, the result is no worse
+(perhaps, even slightly better, but that's in the eye of a beholder). So what's important is that
+the range of values should start with 1 and not with 0, and the shape of the curve is less important.
+
+So, if one worries about the cost of computing a lot of `exp` functions here,
+this cost can be avoided.
