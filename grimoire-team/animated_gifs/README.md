@@ -21,3 +21,5 @@ end
 
 save("test_full.gif", cat(full_imgs3..., dims=3), fps=30)
 ```
+
+![animated_mandrill](test_full.gif)
