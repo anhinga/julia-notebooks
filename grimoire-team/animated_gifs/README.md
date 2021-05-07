@@ -22,4 +22,6 @@ end
 save("test_full.gif", cat(full_imgs3..., dims=3), fps=30)
 ```
 
+This is the image itself (I observed some latency before it starts working full-speed, but eventually it does):
+
 ![animated_mandrill](test_full.gif)
