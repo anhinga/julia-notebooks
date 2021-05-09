@@ -32,8 +32,8 @@ Refactoring should include two things:
 
    * In this sense, the fact that our `warp` "inverse maps", `(x,y)↦(xnew,ynew)`, are integers to integers is a problem.
 
-   * These maps should be reals to reals, and taking integer approximations `xlow <= xnew <= xhigh` and `ylow <= ynew < yhigh`,
-     the resulting image point should be obtained as a function
+   * These maps should be reals to reals. Consider integer approximations `xlow <= xnew <= xhigh` and `ylow <= ynew < yhigh`.
+     Then the resulting image point should be obtained as a function
      `interpolate(img(xlow,ylow), img(xlow, yhigh), img(xhigh, ylow), img(xhigh, yhigh), xnew, ynew)`, and this can change
-     continuously with smooth changes of xnew and ynew.
+     continuously with smooth changes of `xnew` and `ynew`.
 
