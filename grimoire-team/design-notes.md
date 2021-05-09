@@ -23,4 +23,16 @@ Refactoring should include two things:
 1) the `warp` "inverse map", `(x,y)↦(xnew,ynew)`, should be on the level of coords. The access to `img(xnew,ynew)` should be outside the function.
 2) all parameters of "warp" functions should be explicit, global variables should be eliminated.
 
-It would be better if signatures of various `warp` functions are the same. But they are not always the same - how should we handle that?
+3) It would be better if signatures of various `warp` functions are the same. But they are not always the same - how should we handle that?
+
+Probably, we should adopt a uniform discipline of having one dictionary containing all hyperparameters (just like we used a dictionary containing unlimited number of parameters in V-value-based DMMs we implemented in Clojure: https://github.com/jsa-aerial/DMM
+
+4) We also would like to be able to take meaningful derivatives with respect to those hyperparameters. 
+
+In this sense, the fact that our `warp` "inverse maps", `(x,y)↦(xnew,ynew)`, are integers to integers is a problem.
+
+These maps should be reals to reals, and taking integer approximations `xlow <= xnew <= xhigh` and `ylow <= ynew < yhigh`,
+the resulting image point should be obtained as a function
+`interpolate(img(xlow,ylow), img(xlow, yhigh), img(xhigh, ylow), img(xhigh, yhigh), xnew, ynew)`, and this can change
+continuously with smooth changes of xnew and ynew.
+
