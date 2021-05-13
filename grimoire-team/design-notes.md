@@ -36,4 +36,5 @@ Refactoring should include two things:
      Then the resulting image point should be obtained as a function
      `interpolate(img(xlow,ylow), img(xlow, yhigh), img(xhigh, ylow), img(xhigh, yhigh), xnew, ynew)`, and this can change
      continuously with smooth changes of `xnew` and `ynew`.
-
+     
+   * We should probably just use https://github.com/JuliaMath/Interpolations.jl to achieve that.
