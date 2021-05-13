@@ -38,3 +38,8 @@ Refactoring should include two things:
      continuously with smooth changes of `xnew` and `ynew`.
      
    * We should probably just use https://github.com/JuliaMath/Interpolations.jl to achieve that.
+
+   * The https://github.com/JuliaImages/ImageTransformations.jl does have various warping facilities, 
+     but we have a number of concerns with them, and it would be easier not to use them right now,
+     while keeping in mind the way they are structured. We'll use our custom-made warping facilities
+     at first, and reconsider at some future refactoring.
