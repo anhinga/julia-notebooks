@@ -43,3 +43,8 @@ Refactoring should include two things:
      but we have a number of concerns with them, and it would be easier not to use them right now,
      while keeping in mind the way they are structured. We'll use our custom-made warping facilities
      at first, and reconsider at some future refactoring.
+     
+   * So, at the first version, it will be `LinearInterpolation` from `Interpolations` package,
+     custom-made warp (not from a package), and we should explicitly test that Zygote does
+     differentiate through that (otherwise, we'll just reimplement `LinearInterpolation` in
+     a Zygote-friendly way).
