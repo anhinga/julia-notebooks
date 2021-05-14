@@ -8,6 +8,8 @@ When I said "duplicate tab", the resulting notebook was shown!
 
 This needs to be investigated further.
 
+(**Remark:** this effect observed last night does not reproduce today.)
+
 ---
 
 Meanwhile, the usual workaround:
