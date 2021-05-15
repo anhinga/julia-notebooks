@@ -20,3 +20,19 @@ This is the first attempt at refactor according to https://github.com/anhinga/ju
 
 This works nice, although `LinearInterpolation` does seem to produce a tiny bit of smoothing for better or for worse 
 (`ConstantInterpolation` should just more or less reproduce what we had before, but without meaningful derivatives).
+
+---
+
+Note that we can get rid of `Interpolations` package if we feel like it. E.g. to interpolate array `c` something like
+the following function would work:
+```julia
+function h_c(x,y)
+    dx=mod(x,1)
+    dy=mod(y,1)
+    x_left = floor(Int,x)
+    y_left = floor(Int,y)
+    x_right = x_left + 1
+    y_right = y_left + 1
+    c[x_left,y_left]*(1-dx)*(1-dy) + c[x_left,y_right]*(1-dx)*dy + c[x_right,y_left]*dx*(1-dy) + c[x_right, y_right]*dx*dy
+end
+```
