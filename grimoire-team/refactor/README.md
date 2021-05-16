@@ -45,8 +45,8 @@ At the moment GitHub even seems to render it OK:
 
 https://github.com/anhinga/julia-notebooks/blob/main/grimoire-team/refactor/refactor-exercise1.ipynb
 
-whereas the `nbviewer` seems at the moment to suffer from
+(`nbviewer` rendering works now as well, the link is below; was: whereas the `nbviewer` seems at the moment to suffer from
 
-https://github.com/jupyter/nbviewer/issues/979
+https://github.com/jupyter/nbviewer/issues/979)
 
 https://nbviewer.jupyter.org/github/anhinga/julia-notebooks/blob/main/grimoire-team/refactor/refactor-exercise1.ipynb
