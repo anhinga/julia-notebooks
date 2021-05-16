@@ -36,3 +36,17 @@ function h_c(x,y)
     c[x_left,y_left]*(1-dx)*(1-dy) + c[x_left,y_right]*(1-dx)*dy + c[x_right,y_left]*dx*(1-dy) + c[x_right, y_right]*dx*dy
 end
 ```
+
+---
+
+This is the refactor done with our our linear interpolation and in a more functional way.
+
+At the moment GitHub even seems to render it OK:
+
+https://github.com/anhinga/julia-notebooks/blob/main/grimoire-team/refactor/refactor-exercise1.ipynb
+
+whereas the `nbviewer` seems at the moment to suffer from
+
+https://github.com/jupyter/nbviewer/issues/979
+
+https://nbviewer.jupyter.org/github/anhinga/julia-notebooks/blob/main/grimoire-team/refactor/refactor-exercise1.ipynb
