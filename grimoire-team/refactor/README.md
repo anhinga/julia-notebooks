@@ -50,3 +50,9 @@ https://github.com/anhinga/julia-notebooks/blob/main/grimoire-team/refactor/refa
 https://github.com/jupyter/nbviewer/issues/979)
 
 https://nbviewer.jupyter.org/github/anhinga/julia-notebooks/blob/main/grimoire-team/refactor/refactor-exercise1.ipynb
+
+---
+
+Continued here (refactor 2 of exercise 2):
+
+https://github.com/anhinga/julia-gif-art/tree/main/exercise2
