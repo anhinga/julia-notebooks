@@ -24,3 +24,12 @@ grads = gradient(() -> loss(img_gray, p_with_start_at_one_im3), params(img_gray)
 ```
 
 The next step is to figure out what needs to change to make this and other gradient computations work.
+
+---
+
+this is a good time for upgrades: from Julia 1.6.0 to Julia 1.6.1, and we'll see if other upgrades are necessary.
+
+(Flux is complaining about outdated CUDA drivers on my machine, but I am currently only using CPU; so I would hope
+that outdated CUDA drivers don't matter.)
+
+---
