@@ -95,3 +95,9 @@ In particular, just like the essence of "neural model of computations" is that l
 it makes sense to consider the schemes of computation where matrix multiplications and generation of pairs of matrices are interleaved: https://github.com/anhinga/2020-notes/blob/master/attention-based-models/matrix-mult-machines.md
 
 The present study of matrix multiplication of images was done in the context of my thinking about these kinds of computational setups.
+
+#### May 19, 2021 note
+
+This remains an active area of research for me in the recent weeks, here are the high-level pointers:
+
+https://github.com/anhinga/2021-notes/blob/main/matrix-mult-machines/README.md
