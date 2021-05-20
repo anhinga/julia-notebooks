@@ -33,3 +33,17 @@ this is a good time for upgrades: from Julia 1.6.0 to Julia 1.6.1, and we'll see
 that outdated CUDA drivers don't matter.)
 
 ---
+
+Not much changed from the upgrade. I started to experiment on the very small scale, see
+
+https://github.com/anhinga/julia-notebooks/blob/main/transition-to-flux/gray-apparently-involves-mutations.ipynb
+
+and if one looks at cells 44 and 48, one sees that Flux/Zygote believes that Gray from JuliaImages
+(really, from https://github.com/JuliaGraphics/ColorTypes.jl/blob/master/src/types.jl) involves mutations somehow
+and hence not supported. It's a bit weird (what are the mutations?) and a pity, but OK... I don't want
+to dig into this deeper at the moment.
+
+OK, let's do a decoupling refactoring, where we calculate with standard matrices, and just display them
+using image-related primitives.
+
+---
