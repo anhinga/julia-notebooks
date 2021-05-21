@@ -52,3 +52,13 @@ structure the code in a more traditional way (while keeping in mind that concept
 multiplying images as matrices).
 
 ---
+
+OK, here the gradient descent works, so we successfully transitioned to Julia Flux/Zygote:
+
+https://github.com/anhinga/julia-notebooks/blob/main/transition-to-flux/second-refactor.ipynb
+
+But it looks like it gets caught in a local minimum instead of leading us where we hoped it would lead us.
+
+So it's time to think more about this situation. 
+
+(Do we want to find a way to add extra parameters in hope that a larger parameter space would have a better landscape?)
