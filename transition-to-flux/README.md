@@ -46,4 +46,9 @@ to dig into this deeper at the moment.
 OK, let's do a decoupling refactoring, where we calculate with standard matrices, and just display them
 using image-related primitives.
 
+**It was nice to literally treat Gray images as matrices, a nice metaphor - to literally multiply images
+via matrix multiplication and such.** But if this interferes with automated differentiation, we can
+structure the code in a more traditional way (while keeping in mind that conceptually we are still
+multiplying images as matrices).
+
 ---
