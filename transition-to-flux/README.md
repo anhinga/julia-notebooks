@@ -57,6 +57,10 @@ OK, here the gradient descent works, so we successfully transitioned to Julia Fl
 
 https://github.com/anhinga/julia-notebooks/blob/main/transition-to-flux/second-refactor.ipynb
 
+If this link does not open for you, then you can see this Julia notebook here:
+
+https://nbviewer.jupyter.org/github/anhinga/julia-notebooks/blob/main/transition-to-flux/second-refactor.ipynb
+
 But it looks like it gets caught in a local minimum instead of leading us where we hoped it would lead us.
 
 So it's time to think more about this situation. 
