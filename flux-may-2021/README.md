@@ -22,7 +22,7 @@ yields our standard pattern (cell 16). At the same time, if we apply `warp3` tra
 original `mandrill`, we obtain the image at cell 7, and if we apply `value3` transformation
 to it, we obtain the image at cell 24.
 
-Now, we would like to start with the original `'mandrill` and apply gradient of the difference
+Now, we would like to start with the original `mandrill` and apply gradient of the difference
 between cell 24 and `value3(x)` in the spirit of DeepDream, while hoping to solve the
 equation `value3(x) = image at cell 24`.
 
@@ -56,7 +56,7 @@ So, if we look at cells 689 to 938, I just perform steps by clicking on cell 934
 as needed (here it was slightly over 200 times), and I inspect all intermediate results at any time,
 as I retain all intermediate matrices obtained during this iterative process in `large_ms`.
 
-The system does converge well; it seems that there are a number of solutions to the equation
+The system does converge well; it seems that there are multiple solutions to the equation
 `value3(x) = image at cell 24` besides the image at cell 7 (which is a known solution).
 So, from the viewpoint of `loss` function, it seems that there are many global minima.
 
