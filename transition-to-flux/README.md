@@ -66,3 +66,9 @@ But it looks like it gets caught in a local minimum instead of leading us where 
 So it's time to think more about this situation. 
 
 (Do we want to find a way to add extra parameters in hope that a larger parameter space would have a better landscape?)
+
+---
+
+**May 23, 2021:** I switched to ADAM optimizer, and there is convergence to an interesting result:
+
+https://github.com/anhinga/julia-notebooks/tree/main/flux-may-2021
