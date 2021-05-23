@@ -47,4 +47,24 @@ function step!(x, y, loss, opt, accum)
 end
 ```
 
+I don't like the "mandatory mutability" in these Flux functions, and I am trying to mitigate it
+by storing all intermediate matrices (of course, this might often be too expensive to do so
+in many practical situations; here I am just exploiting the fact that this is a relatively
+small problem, and also the fact that it converges after a relatively small number of iterations).
 
+So, if we look at cells 689 to 938, I just perform steps by clicking on cell 934 as many times
+as needed (here it was slightly over 200 times), and I inspect all intermediate results at any time,
+as I retain all intermediate matrices obtained during this iterative process in `large_ms`.
+
+The system does converge well; it seems that there are a number of solutions to the equation
+`value3(x) = image at cell 24` besides the image at cell 7 (which is a known solution).
+So, from the viewpoint of `loss` function, it seems that there are many global minima.
+
+The system does find a solution with interesting patterns which is much closer to our starting
+point (the original `mandrill`) than cell 7. This solution is in cell 936.
+
+So, with ADAM optimizer we have a reasonable level of convergence, and we do find a solution,
+and this solution does have interesting patterns.
+
+We might want to investigate it further, to animate the process of finding this solution,
+to show the differences in the images in a colored fashion, etc.
