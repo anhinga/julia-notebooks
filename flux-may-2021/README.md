@@ -69,4 +69,4 @@ and this solution does have interesting patterns.
 We might want to investigate it further, to animate the process of finding this solution,
 to show the differences in the images in a colored fashion, etc.
 
-For animation of this training process see `animation-of-may-23-run` subdirectory.
+For animation of this training process and the loss curve see `animation-of-may-23-run` subdirectory.
