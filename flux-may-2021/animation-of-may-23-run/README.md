@@ -51,10 +51,10 @@ Note that one needs `fmt = :png` if one wants to be able to save the resulting i
 Otherwise, the default "in-page svg graph" works just fine.
 
 See the resulting graph at `loss-curve.png`. Note that we stopped doing steps when the
-loss stopped confidently decreasing, so we don't know if it would go all the way to zero.
+loss stopped confidently decreasing, so we did not know if it would go all the way to zero.
 
-At the same time, at the level we achieved the target image `Gray.(p_m_im0_warped_norm)`
-is visually indistinguishable from `Gray.(value3(m_im0))` (the method used to compare
-two very similar images visually is too display them rapidly one after another, then
-changes should be visible, even when they are not visible side-by-side; so I have not
-seen any differences using this method).
+At the same time, at the loss level we have achieved, the target image `Gray.(p_m_im0_warped_norm)`
+have been visually indistinguishable from `Gray.(value3(m_im0))` (the method used to compare
+two very similar images visually is to display them rapidly one after another, then
+changes should be visible, even when they are not visible side-by-side; I have not
+detected any differences between these two images using this method).
