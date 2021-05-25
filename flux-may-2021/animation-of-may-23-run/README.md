@@ -62,5 +62,5 @@ detected any differences between these two images using this method).
 ---
 
 File `learning-may-23_step6_fps1_colored.gif` - a colorized version of the same animation in false colors
-(light purple - delta color above the original image, the lighter the further above, dark green - delta color below
-the original image, the darker, the further below).
+(light purple - delta color above the original image, the lighter the purple, the further above the original image the delta is;
+dark green - delta color below the original image, the darker the green, the further below the original image the delta is).
