@@ -58,3 +58,9 @@ have been visually indistinguishable from `Gray.(value3(m_im0))` (the method use
 two very similar images visually is to display them rapidly one after another, then
 changes should be visible, even when they are not visible side-by-side; I have not
 detected any differences between these two images using this method).
+
+---
+
+File `learning-may-23_step6_fps1_colored.gif` - a colorized version of the same animation in false colors
+(light purple - delta color above the original image, the lighter the further above, dark green - delta color below
+the original image, the darker, the further below).
