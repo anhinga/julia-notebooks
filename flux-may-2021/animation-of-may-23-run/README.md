@@ -63,4 +63,26 @@ detected any differences between these two images using this method).
 
 File `learning-may-23_step6_fps1_colored.gif` - a colorized version of the same animation in false colors
 (light purple - delta color above the original image, the lighter the purple, the further above the original image the delta is;
-dark green - delta color below the original image, the darker the green, the further below the original image the delta is).
+dark green - delta color below the original image, the darker the green, the further below the original image the delta is). 
+38 frames, 18 MB, 1 frame per second, each frame corresponds to 6 iterations of ADAM.
+
+---
+
+A Julia Jupyter notebook `visualization-drafts-for-may-23-switch-to-adam.ipynb`: a rather huge notebook (45 MB),
+containing all kinds of visualization experiments in a rough draft form (including making of both animations
+presented here):
+
+https://nbviewer.jupyter.org/github/anhinga/julia-notebooks/blob/main/flux-may-2021/animation-of-may-23-run/visualization-drafts-for-may-23-switch-to-adam.ipynb
+
+Of particular note are the following cells:
+  * Cells 942, 979: making the `learning-may-23_step6_fps1.gif` animation.
+  * Cell 1038: the delta between the learned pattern and the original amplified to the maximal contrast.
+  * Cells 1041, 1043, 1066, 1071: colorization of the learned pattern
+  * Cell 1068: the delta between the warped pattern and the original amplified to the maximal contrast.
+  * Cells 1075, 1078: colorization of the delta between the warped pattern and the original.
+  * Cells 1081, 1082: the delta between the warped and learned pattern, and its negation, amplified to the maximal constrast.
+  * Cells 1083, 1084, 1085, 1086: colorization of the above.
+  * Cell 1090: a beautiful mistake (bugs are the best for a digital artist :-)).
+  * Cell 1092: the delta between the target product pattern and the original product pattern amplified to the maximal contrast.
+  * Cells 1093, 1097: the colorization of the above.
+  * Cells 1098, 1103, 1122: maing the `learning-may-23_step6_fps1_colored.gif` animation in false colors.
