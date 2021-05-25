@@ -78,7 +78,7 @@ Then we consider a warp of the original image, and the transform `value3` applie
 
 Then we apply an ADAM version of gradient descent to the original image. The gradient 
 of the norm of the difference between the right-hand-side images above with respect to the original image is taken.
-After a couple of hundreds of iterations of the ADAM optimizer (this does not take much time) we obtain:
+After a couple of hundred of iterations of the ADAM optimizer (this does not take much time) we obtain:
 
 ![image_found_by_machine_learning_and_its_transform](image_found_by_machine_learning_and_its_transform.png "image_found_by_machine_learning_and_its_transform")
 
