@@ -68,4 +68,8 @@ and this solution does have interesting patterns.
 
 For animations of this training process, the loss curve, and colorized visualizations see `animation-of-may-23-run` subdirectory.
 
+To recap: we start with the original image of `mandrill` and its transform, `value3`, applied to that image:
+
+![original_image_and_its_transform](original_image_and_its_transform.png "original_image_and_its_transform")
+
 We are likely to investigate this setup and its variations further.
