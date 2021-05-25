@@ -82,4 +82,7 @@ After a couple of hundreds of iteration of ADAM optimizer (this does not take mu
 
 ![image_found_by_machine_learning_and_its_transform](image_found_by_machine_learning_and_its_transform.png "image_found_by_machine_learning_and_its_transform")
 
+So we wanted to solve an equation `value3(X) = value3(warped mandrill)`, but instead of finding `X = warped mandrill`,
+we found a different `X` which is also a correct solution to this equation.
+
 We are likely to investigate this setup and its variations further.
