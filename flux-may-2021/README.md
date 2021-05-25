@@ -66,7 +66,6 @@ point (the original `mandrill`) than cell 7. This solution is in cell 936.
 So, with ADAM optimizer we have a reasonable level of convergence, and we do find a solution,
 and this solution does have interesting patterns.
 
-We might want to investigate it further, to animate the process of finding this solution,
-to show the differences in the images in a colored fashion, etc.
+For animation of this training process, the loss curve, and colorized visualizations see `animation-of-may-23-run` subdirectory.
 
-For animation of this training process and the loss curve see `animation-of-may-23-run` subdirectory.
+We are likely to investigate this setup and its variations further.
