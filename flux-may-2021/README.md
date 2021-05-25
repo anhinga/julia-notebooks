@@ -80,6 +80,6 @@ Then we apply an ADAM version of gradient descent to the original image. The gra
 of the norm difference between the right-hand-side images above with respect to the original image is taken.
 After a couple of hundreds of iteration of ADAM optimizer (this does not take much time) we obtain:
 
-![image_found_by_machine_learning_and_its_transform](image_found_by_machine_learning_image_and_its_transform.png "image_found_by_machine_learning_image_and_its_transform")
+![image_found_by_machine_learning_and_its_transform](image_found_by_machine_learning_and_its_transform.png "image_found_by_machine_learning_and_its_transform")
 
 We are likely to investigate this setup and its variations further.
