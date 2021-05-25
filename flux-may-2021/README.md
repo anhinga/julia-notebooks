@@ -78,11 +78,14 @@ Then we consider a warp of the original image, and the transform `value3` applie
 
 Then we apply an ADAM version of gradient descent to the original image. The gradient 
 of the norm of the difference between the right-hand-side images above with respect to the original image is taken.
-After a couple of hundreds of iteration of ADAM optimizer (this does not take much time) we obtain:
+After a couple of hundreds of iterations of the ADAM optimizer (this does not take much time) we obtain:
 
 ![image_found_by_machine_learning_and_its_transform](image_found_by_machine_learning_and_its_transform.png "image_found_by_machine_learning_and_its_transform")
 
 So we wanted to solve an equation `value3(X) = value3(warped mandrill)`, but instead of finding `X = warped mandrill`,
-we found a different `X` which is also a correct solution to this equation.
+we found a different `X` which is also a correct solution to this equation. This setup is inspired by DeepDream to a large extent,
+but is quite different (we take a small untrained machine, we optimize for the result having a particular shape, and not
+for activity of a part of the network; we do take gradient with respect to the input image, and in this sense it is
+similar to DeepDream).
 
 We are likely to investigate this setup and its variations further.
