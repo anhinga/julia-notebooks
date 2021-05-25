@@ -85,4 +85,4 @@ Of particular note are the following cells:
   * Cell 1090: a beautiful mistake (bugs are the best for a digital artist :-)).
   * Cell 1092: the delta between the target product pattern and the original product pattern amplified to the maximal contrast.
   * Cells 1093, 1097: the colorization of the above.
-  * Cells 1098, 1103, 1122: maing the `learning-may-23_step6_fps1_colored.gif` animation in false colors.
+  * Cells 1098, 1103, 1122: making the `learning-may-23_step6_fps1_colored.gif` animation in false colors.
