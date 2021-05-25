@@ -72,4 +72,8 @@ To recap: we start with the original image of `mandrill` and its transform, `val
 
 ![original_image_and_its_transform](original_image_and_its_transform.png "original_image_and_its_transform")
 
+Then we consider a warp of the original image, and the transform `value3` applied to that warp:
+
+![warped_image_and_its_transform](warped_image_and_its_transform.png "warped_image_and_its_transform")
+
 We are likely to investigate this setup and its variations further.
