@@ -21,7 +21,8 @@ produced eventually, after a few hours. The cell following cell 66 ended up prod
 
 ```julia
 steps!(m_im0, p_m_im0_warped_norm, loss_new, opt2, matrix_sequence, 1)
-
+```
+```
 Need an adjoint for constructor Base.Iterators.ProductIterator{Tuple{UnitRange{Int64}, UnitRange{Int64}}}. Gradient is of type Matrix{Tuple{Float64, Float64}}
 ```
 
