@@ -1,3 +1,5 @@
+(Accepted for presentation as a virtual poster at JuliaCon 2021).
+
 ## Multiplying monochrome images as matrices: A*B and softmax
 
 ---
