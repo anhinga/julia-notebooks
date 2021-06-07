@@ -59,9 +59,9 @@ https://github.com/anhinga/julia-notebooks/blob/main/flux-may-2021/variation-3/w
 
 This is scaled down to 3x3 matrices; `warp3_parametrized` is the new flexible version of `warp3`.
 
-It seems that in this context it does not matter which of Integer vs. Float32 vs. Float64 in `1 vs 1.0f0 vs 1.0:xsize*ysize` is used.
+It seems that in this context it does not matter which of `Integer vs. Float32 vs. Float64` in `1 vs 1.0f0 vs 1.0:xsize*ysize` is used.
 
-ADAM(0.001)/ADAMW(0.001) got stuck in a local minimum, but ADAMW(0.01) worked fine, although a bit slow
+`ADAM(0.001)/ADAMW(0.001)` got stuck in a local minimum, but `ADAMW(0.01)` worked fine, although a bit slow
 (probably the learning rate should have been even larger, at least initially).
 
 The resulting solution is, however, very "non-visual" containing such values of matrix elements as 11 and -47
