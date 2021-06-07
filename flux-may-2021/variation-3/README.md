@@ -50,3 +50,23 @@ reshape([linear_interpolation(warp((i-1) % xsize + 1, (i-1) ÷ xsize + 1, p)) fo
 ```
 
 (Integer vs. Float32 vs. Float64 in `1.0f0:xsize*ysize` is another interesting issue here; I am not quite sure about it yet.)
+
+---
+
+I've added my first small Flux experiment involving `warp`:
+
+https://github.com/anhinga/julia-notebooks/blob/main/flux-may-2021/variation-3/warps_in_flux.ipynb
+
+This is scaled down to 3x3 matrices; `warp3_parametrized` is the new flexible version of `warp3`.
+
+It seems that in this context it does not matter which of Integer vs. Float32 vs. Float64 in `1 vs 1.0f0 vs 1.0:xsize*ysize` is used.
+
+ADAM(0.001)/ADAMW(0.001) got stuck in a local minimum, but ADAMW(0.01) worked fine, although a bit slow
+(probably the learning rate should have been even larger, at least initially).
+
+The resulting solution is, however, very "non-visual" containing such values of matrix elements as 11 and -47
+(one can still visualize that, but fine-grained details are then lost).
+
+So, we do have some warning signs here, both in how tricky the optimization is, and in how far is the result
+from the "natural visual range"; nevertheless, the ability to solve an inverse problem here is quite
+encouraging.
