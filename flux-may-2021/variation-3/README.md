@@ -6,6 +6,8 @@ https://github.com/anhinga/julia-notebooks/blob/main/flux-may-2021/variation-3/f
 
 https://nbviewer.jupyter.org/github/anhinga/julia-notebooks/blob/main/flux-may-2021/variation-3/further-flux-variation-3-experiments.ipynb?flush_cache=true )
 
+nbviewer link works now: https://nbviewer.jupyter.org/github/anhinga/julia-notebooks/blob/main/flux-may-2021/variation-3/further-flux-variation-3-experiments.ipynb
+
 we have successfully run a similar experiment, where we took a warped version, and used gradient descent to eliminate
 "grains" in the product.
 
