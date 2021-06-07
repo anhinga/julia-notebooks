@@ -30,3 +30,21 @@ From my further experiments, it seems that the current incarnation of Zygote is 
 
 It looks like one should use a one-dimensional array comprehension, and then `reshape` (or, if one feels confident, one can create
 a **custom adjoint** for the missing functionality).
+
+---
+
+My experiments indicate that a workaround based on `reshape` does work.
+
+One replaces
+
+```julia
+[linear_interpolation(warp(x,y,p)) for x in 1:xsize, y in 1:ysize]
+```
+
+in the function `apply_warp` with something like this rather ugly construction:
+
+```julia
+reshape([linear_interpolation(warp((i-1) % xsize + 1, (i-1) ÷ xsize + 1, p)) for i in 1.0f0:xsize*ysize], xsize, ysize)
+```
+
+(Float32 vs. Float64 is another interesting issue here; I am not quite sure about it yet.)
