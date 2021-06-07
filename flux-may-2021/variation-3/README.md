@@ -49,4 +49,4 @@ in the function `apply_warp` with something like this rather ugly construction:
 reshape([linear_interpolation(warp((i-1) % xsize + 1, (i-1) ÷ xsize + 1, p)) for i in 1.0f0:xsize*ysize], xsize, ysize)
 ```
 
-(Float32 vs. Float64 is another interesting issue here; I am not quite sure about it yet.)
+(Integer vs. Float32 vs. Float64 in `1.0f0:xsize*ysize` is another interesting issue here; I am not quite sure about it yet.)
