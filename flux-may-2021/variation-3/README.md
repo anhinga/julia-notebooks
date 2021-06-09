@@ -68,7 +68,8 @@ It seems that in this context it does not matter which of `Integer vs. Float32 v
 
 (REMARK: looking at https://github.com/FluxML/Flux.jl/blob/master/src/optimise/optimisers.jl ;
 by default, there is no difference between ADAMW and ADAM; one should set the weight decay explicitly
-to take advantage of ADAMW changes, but the default value of weight decay is zero.)
+to take advantage of ADAMW changes, but the default value of weight decay is zero. This run I've done
+was with this default parameter setting, where ADAMW is equivalent to ADAM.)
 
 The resulting solution is, however, very "non-visual" containing such values of matrix elements as 11 and -47
 (one can still visualize that, but fine-grained details are then lost).
