@@ -91,7 +91,7 @@ constant. I am treating this as a bug (and a to-do item to look at the internal 
 the resulting gradient computations; fortunately, both Julia and Zygote are well-equipped for that).
 
 The second problem was that the default learning rate was probably too low. We started with loss
-of about 40, and kept shedding about 0.25 per iteration (staying above 0.005 loss decrease per iteration
+of about 40, and kept shedding about 0.25 per iteration (staying above 0.5% loss decrease per iteration
 as we were moving lower), and with fast gradient computations this would be fine, but I have a feeling
 that the learning rate should be much higher in such a situation (again at least 0.01 instead of the
 default 0.001).
