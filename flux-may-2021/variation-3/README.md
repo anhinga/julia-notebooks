@@ -59,6 +59,10 @@ I've added my first small Flux experiment involving `warp`:
 
 https://github.com/anhinga/julia-notebooks/blob/main/flux-may-2021/variation-3/warps_in_flux.ipynb
 
+GitHub used to render this small notebook fine yesterday, but no more, so here is the corresponding `nbviewer` link:
+
+https://nbviewer.jupyter.org/github/anhinga/julia-notebooks/blob/main/flux-may-2021/variation-3/warps_in_flux.ipynb
+
 This is scaled down to 3x3 matrices; `warp3_parametrized` is the new flexible version of `warp3`.
 
 It seems that in this context it does not matter which of `Integer vs. Float32 vs. Float64` in `1 vs 1.0f0 vs 1.0:xsize*ysize` is used.
