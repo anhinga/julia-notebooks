@@ -2,9 +2,7 @@ In the new notebook
 
 https://github.com/anhinga/julia-notebooks/blob/main/flux-may-2021/variation-3/further-flux-variation-3-experiments.ipynb
 
-(nbviewer: https://nbviewer.jupyter.org/github/anhinga/julia-notebooks/blob/main/flux-may-2021/variation-3/warps_in_flux.ipynb)
-
-(in nbviewer, currently requires flush_cache=true flag (yes, this issue again: https://github.com/jupyter/nbviewer/issues/979 )
+(in nbviewer, currently requires flush_cache=true flag (yes, this issue again: https://github.com/jupyter/nbviewer/issues/979 ) :
 
 https://nbviewer.jupyter.org/github/anhinga/julia-notebooks/blob/main/flux-may-2021/variation-3/further-flux-variation-3-experiments.ipynb?flush_cache=true )
 
@@ -87,8 +85,8 @@ encouraging.
 I made a first attempt to do the same run for the full 512x512 case, and I encountered 2 problems.
 
 The serious problem was that gradient computation was suddenly very slow (only a few of them per hour).
-This seems to contract the usual practice (based on the standard "backpropagation theorem"), that
-gradient computation is bounded by a time which the forward computation takes multiplied by a moderate
+This seems to contradict the usual practice (based on the standard "backpropagation theorem"), that
+gradient computation is bounded by the time which the forward computation takes multiplied by a moderately sized
 constant. I am treating this as a bug (and a to-do item to look at the internal representation of
 the resulting gradient computations; fortunately, both Julia and Zygote are well-equipped for that).
 
