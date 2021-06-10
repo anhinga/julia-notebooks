@@ -77,3 +77,19 @@ The resulting solution is, however, very "non-visual" containing such values of 
 So, we do have some warning signs here, both in how tricky the optimization is, and in how far is the result
 from the "natural visual range"; nevertheless, the ability to solve an inverse problem here is quite
 encouraging.
+
+---
+
+I made a first attempt to do the same run for the full 512x512 case, and I encountered 2 problems.
+
+The serious problem was that gradient computation was suddenly very slow (only a few of them per hour).
+This seems to contract the usual practice (based on the standard "backpropagation theorem"), that
+gradient computation is bounded by a time which the forward computation takes multiplied by a moderate
+constant. I am treating this as a bug (and a to-do item to look at the internal representation of
+the resulting gradient computations; fortunately, both Julia and Zygote are well-equipped for that).
+
+The second problem was that the default learning rate was probably too low. We started with loss
+of about 40, and kept shedding about 0.25 per iteration (staying above 0.005 loss decrease per iteration
+as we were moving lower), and with fast gradient computations this would be fine, but I have a feeling
+that the learning rate should be much higher in such a situation (again at least 0.01 instead of the
+default 0.001).
