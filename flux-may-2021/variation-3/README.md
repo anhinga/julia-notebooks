@@ -96,11 +96,11 @@ as we were moving lower), and with fast gradient computations this would be fine
 that the learning rate should be much higher in such a situation (again at least 0.01 instead of the
 default 0.001).
 
-Speaking about the slowness of gradient computations in this case, in principle, Zygote has a toolkit
+Speaking of the slowness of gradient computations in this case: in principle, Zygote has a toolkit
 to debug issues like that: https://fluxml.ai/Zygote.jl/latest/internals/
 
 However, this does look too complicated for my current level of mastery of intermediate representations.
 
-But one thing I did notice is that these warp functions yield Float64 for a reason I don't quite understand
+But one thing I have noticed is that these warp functions yield Float64 for a reason I don't quite understand
 yet, and Julia Flux is currently optimized for Float32. So the first thing to try is to make sure that
 these functions work with Float32 and see if that would be enough to deal with the abnormal slowdown.
