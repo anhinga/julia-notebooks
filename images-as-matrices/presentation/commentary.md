@@ -25,6 +25,8 @@ This is the first notebook in this study, it was created on December 8, 2020 wit
 on Windows 10. I verified that all this still works with Julia 1.6.0 (but much faster, and
 the warning in cell 1 is gone, which is good).
 
+There is now a separate repository associated with the JuliaCon 2021 virtual poster presentation: https://github.com/anhinga/JuliaCon2021-poster
+
 The sketch of the talk proposal itself is at https://github.com/anhinga/julia-notebooks/blob/main/images-as-matrices/presentation/talk-proposal.md
 
 I discuss a bit of machine learning context at the bottom of this file
