@@ -45,3 +45,11 @@ and more fine-grained control of our machine learning models.
 
 The markdown file commenting the Julia notebook and elaborating on machine learning connections is posted at 
 https://github.com/anhinga/julia-notebooks/blob/main/images-as-matrices/presentation/commentary.md
+
+After this proposal was submitted, I have explored composing matrix multiplications with other image transformations. 
+The resulting compact neural machines produce visually interesting results.
+
+I have conducted first experiments in solving machine learning problems formulated in terms of those compact machines 
+taking advantage of flexibility of differentiable programming in Julia Flux.
+
+I have created a repository containing materials relevant to this poster: https://github.com/anhinga/JuliaCon2021-poster
