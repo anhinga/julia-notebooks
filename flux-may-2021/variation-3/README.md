@@ -33,6 +33,9 @@ From my further experiments, it seems that the current incarnation of Zygote is 
 It looks like one should use a one-dimensional array comprehension, and then `reshape` (or, if one feels confident, one can create
 a **custom adjoint** for the missing functionality).
 
+**April 2022 update**: these adjoints work now; the slowdown described below is still present even when using those adjoints, but is much less pronounced,
+so I have been able to successfully perform those experiments (I might publish them in the future).
+
 ---
 
 My experiments indicate that a workaround based on `reshape` does work.
